@@ -1,7 +1,9 @@
 
 # Map-Reduce Word Count
 
-This project is implemented in Python using gRPC. The input files are given in .txt format and the word count operation is performed.
+This project is implemented in Python using gRPC. The input files are given in .txt format and the word count operation is performed. 
+
+The medium article for understansing the code better is [Learn gRPC with an Example](https://blog.devgenius.io/learning-grpc-with-an-example-8b4931bd90c8)
 
 
 ## **Description**
