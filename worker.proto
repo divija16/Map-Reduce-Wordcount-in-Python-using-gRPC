@@ -1,0 +1,32 @@
+
+syntax = "proto3";
+
+package workerPackage;
+
+service Worker {
+    rpc setDriverPort(driverPort) returns (status);
+    rpc map(mapInput) returns (status);
+    rpc reduce (rid) returns (status);
+    rpc die (empty) returns (status);
+}
+
+message empty {} // empty message
+
+message rid {
+    int32 id = 1; // Reduce id
+}
+
+message status {
+    int32 code = 1;
+    string msg = 2;
+}
+
+message mapInput {
+    string path = 1; // File path
+    int32 mapID = 2; // ID of map opperation
+    int32 m = 3; //
+}
+
+message driverPort {
+    int32 port = 1;
+}

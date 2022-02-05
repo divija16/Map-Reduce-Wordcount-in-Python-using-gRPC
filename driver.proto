@@ -1,0 +1,21 @@
+
+syntax = "proto3";
+
+package driverPackage;
+
+service Driver {
+    rpc launchDriver (launchData) returns (status);
+}
+
+message empty {} // empty message
+
+message status {
+    int32 code = 1;
+    string msg = 2;
+}
+
+message launchData {
+    string dirPath = 1;
+    int32 m = 2;
+    string ports = 3;
+}
