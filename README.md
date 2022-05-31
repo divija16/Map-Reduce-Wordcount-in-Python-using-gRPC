@@ -141,7 +141,8 @@ $ python client.py ./inputs 6 4001 4002 4003
 
 # Contributors
 
-- Divija Swetha Gadiraju <dgadiraj@purdue.edu>
+- Divija Swetha Gadiraju 
+<!-- -  <dgadiraj@purdue.edu> -->
 
 # License
 [MIT LICENSE](LICENSE)
